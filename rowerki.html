@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reklama biznesu</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #ffffff;
+      color: #111827;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: min(100%, 980px);
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 24px;
+      box-shadow: 0 12px 32px rgba(17, 24, 39, 0.08);
+      overflow: hidden;
+    }
+
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .visual {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+      display: grid;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .row {
+      display: grid;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .row--image {
+      grid-template-columns: 1fr;
+    }
+
+    .row--contact {
+      grid-template-columns: 140px 1fr;
+    }
+
+    .frame {
+      width: 100%;
+      min-height: 420px;
+      border: 2px dashed #cbd5e1;
+      border-radius: 20px;
+      background: #fff;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 12px;
+      color: #6b7280;
+      overflow: hidden;
+    }
+
+    .ad-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 16px;
+      display: block;
+    }
+
+    .qr-box,
+    .phone-box {
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      background: #f9fafb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      min-height: 192px;
+    }
+
+    .qr-image {
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .phone {
+      font-size: 2.88rem;
+      font-weight: 800;
+      color: #111827;
+      letter-spacing: 0.05em;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    @media (max-width: 980px) {
+      .hero { padding: 18px; }
+      .visual { max-width: 100%; }
+      .row--contact { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <section class="hero">
+      <aside class="visual">
+        <div class="row row--image">
+          <div class="frame">
+            <img class="ad-image" src="rowerki.png" alt="Reklama biznesu - rowerki" />
+          </div>
+        </div>
+
+        <div class="row row--contact">
+          <div class="qr-box">
+            <img class="qr-image" src="qr_black.png" alt="QR kod" />
+          </div>
+          <div class="phone-box">
+            <div class="phone">781-071-549</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>
