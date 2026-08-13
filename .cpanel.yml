@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/vh17362/public_html/
-    - export REPOPATH=/home/vh17362/repositories/rowerki
+    - export REPOPATH=/home/vh17362/repositories/rowerki_2
     - /bin/cp -R "$REPOPATH/index.html" "$REPOPATH/rowerki.html" "$REPOPATH/rowerki.png" "$REPOPATH/qr_black.png" "$DEPLOYPATH"
